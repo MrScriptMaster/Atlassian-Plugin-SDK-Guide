@@ -12,57 +12,57 @@
 	atlas-create-jira-plugin  
 Эта команда запустит создание maven-проекта с минимальной конфигурацией.
 3. Во время создания в командной оболочке необходимо ввести некоторые данные для сборщика (данные архетипа Maven):
-  - groupId - уникальный идентификатор плагина (например, "com.atlassian.tutorial").
-  - artifactId - имя файла архива (например, "myPlugin").
-  - version - номер версии плагина. Можно нажать "ввод", тогда применится строка 1.0.0-SNAPSHOT.
-  - package - имя Java пакета, в котором будет уложен код плагина (например, com.atlassian.tutorial.myPlugin).
+    - groupId - уникальный идентификатор плагина (например, "com.atlassian.tutorial").
+    - artifactId - имя файла архива (например, "myPlugin").
+    - version - номер версии плагина. Можно нажать "ввод", тогда применится строка 1.0.0-SNAPSHOT.
+    - package - имя Java пакета, в котором будет уложен код плагина (например, com.atlassian.tutorial.myPlugin).
 4. После заполнения полей нужно ввести Y для подтверждения введенных данных.
 Базовая структура плагина имеет следующий вид
 
-	.
-	├── LICENSE
-	├── README
-	├── pom.xml
-	└── src
-	    ├── main
-	    │   ├── java
-	    │   │   └── com
-	    │   │       └── atlassian
-	    │   │           └── tutorial
-	    │   │               └── myPlugin
-	    │   │                   ├── api
-	    │   │                   │   └── >MyPluginComponent.java
-	    │   │                   └── impl
-	    │   │                       └── >MyPluginComponentImpl.java
-	    │   └── resources
-	    │       ├── META-INF
-	    │       │   └── spring
-	    │       │       └── plugin-context.xml
-	    │       ├── atlassian-plugin.xml
-	    │       ├── css
-	    │       │   └── myPlugin.css
-	    │       ├── images
-	    │       │   ├── pluginIcon.png
-	    │       │   └── pluginLogo.png
-	    │       ├── myPlugin.properties
-	    │       └── js
-	    │           └── myPlugin.js
-	    └── test
-	        ├── java
-	        │   ├── it
-	        │   │   └── com
-	        │   │       └── atlassian
-	        │   │           └── tutorial
-	        │   │               └── myPlugin
-	        │   │                   └── MyComponentWiredTest.java
-	        │   └── ut
-	        │       └── com
-	        │           └── atlassian
-	        │               └── tutorial
-	        │                   └── myPlugin
-	        │                       └── MyComponentUnitTest.java
-	        └── resources
-	            └── atlassian-plugin.xml
+	.  
+	├── LICENSE  
+	├── README  
+	├── pom.xml  
+	└── src  
+	    ├── main  
+	    │   ├── java  
+	    │   │   └── com  
+	    │   │       └── atlassian  
+	    │   │           └── tutorial  
+	    │   │               └── myPlugin  
+	    │   │                   ├── api  
+	    │   │                   │   └── >MyPluginComponent.java  
+	    │   │                   └── impl  
+	    │   │                       └── >MyPluginComponentImpl.java  
+	    │   └── resources  
+	    │       ├── META-INF  
+	    │       │   └── spring  
+	    │       │       └── plugin-context.xml  
+	    │       ├── atlassian-plugin.xml  
+	    │       ├── css  
+	    │       │   └── myPlugin.css  
+	    │       ├── images  
+	    │       │   ├── pluginIcon.png  
+	    │       │   └── pluginLogo.png  
+	    │       ├── myPlugin.properties  
+	    │       └── js  
+	    │           └── myPlugin.js  
+	    └── test  
+	        ├── java  
+	        │   ├── it  
+	        │   │   └── com  
+	        │   │       └── atlassian  
+	        │   │           └── tutorial  
+	        │   │               └── myPlugin  
+	        │   │                   └── MyComponentWiredTest.java  
+	        │   └── ut  
+	        │       └── com  
+	        │           └── atlassian  
+	        │               └── tutorial  
+	        │                   └── myPlugin  
+	        │                       └── MyComponentUnitTest.java  
+	        └── resources  
+	            └── atlassian-plugin.xml  
 
 Несложно понять, что плагин представляет собой Java-проект, который оборачивает код JavaScript.  
 
@@ -119,15 +119,15 @@
   > atlas-create-jira-plugin-module
 2. Далее нужно выбрать один из поддерживаемых модулей, скажем, модуль 30, который называется Web Section.
 3. После этого нужно задать параметры модуля, например
-  > Enter Plugin Module Name My Web Section: : mySection
-  > Enter Location (e.g. system.admin/mynewsection): my-item-link
-  > Show Advanced Setup? (Y/y/N/n) N: : N
+  > Enter Plugin Module Name My Web Section: : mySection  
+  > Enter Location (e.g. system.admin/mynewsection): my-item-link  
+  > Show Advanced Setup? (Y/y/N/n) N: : N  
 4. Чтобы создать еще модуль, наберите 'Y'.
 5. Создайте модуль 25 со следующими параметрами
-  > Enter Plugin Module Name My Web Item: : myItem
-  > Enter Section (e.g. system.admin/globalsettings): system.top.navigation.bar
-  > Enter Link URL (e.g. /secure/CreateIssue!default.jspa): deleteMe
-  > Show Advanced Setup? (Y/y/N/n) N: : N
+  > Enter Plugin Module Name My Web Item: : myItem  
+  > Enter Section (e.g. system.admin/globalsettings): system.top.navigation.bar  
+  > Enter Link URL (e.g. /secure/CreateIssue!default.jspa): deleteMe  
+  > Show Advanced Setup? (Y/y/N/n) N: : N  
 6. Введите N, чтобы прекратить создание модулей.
 
 После того как вы создали два модуля, XML структура изменится на такую
