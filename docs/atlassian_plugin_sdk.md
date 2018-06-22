@@ -18,50 +18,50 @@
   - package - имя Java пакета, в котором будет уложен код плагина (например, com.atlassian.tutorial.myPlugin).
 4. После заполнения полей нужно ввести Y для подтверждения введенных данных.
 Базовая структура плагина имеет следующий вид
-  >.
-  >├── LICENSE
-  >├── README
-  >├── pom.xml
-  >└── src
-  >    ├── main
-  >    │   ├── java
-  >    │   │   └── com
-  >    │   │       └── atlassian
-  >    │   │           └── tutorial
-  >    │   │               └── myPlugin
-  >    │   │                   ├── api
-  >    │   │                   │   └── >MyPluginComponent.java
-  >    │   │                   └── impl
-  >    │   │                       └── >MyPluginComponentImpl.java
-  >    │   └── resources
-  >    │       ├── META-INF
-  >    │       │   └── spring
-  >    │       │       └── plugin-context.xml
-  >    │       ├── atlassian-plugin.xml
-  >    │       ├── css
-  >    │       │   └── myPlugin.css
-  >    │       ├── images
-  >    │       │   ├── pluginIcon.png
-  >    │       │   └── pluginLogo.png
-  >    │       ├── myPlugin.properties
-  >    │       └── js
-  >    │           └── myPlugin.js
-  >    └── test
-  >        ├── java
-  >        │   ├── it
-  >        │   │   └── com
-  >        │   │       └── atlassian
-  >        │   │           └── tutorial
-  >        │   │               └── myPlugin
-  >        │   │                   └── MyComponentWiredTest.java
-  >        │   └── ut
-  >        │       └── com
-  >        │           └── atlassian
-  >        │               └── tutorial
-  >        │                   └── myPlugin
-  >        │                       └── MyComponentUnitTest.java
-  >        └── resources
-  >            └── atlassian-plugin.xml
+	.
+	├── LICENSE
+	├── README
+	├── pom.xml
+	└── src
+	    ├── main
+	    │   ├── java
+	    │   │   └── com
+	    │   │       └── atlassian
+	    │   │           └── tutorial
+	    │   │               └── myPlugin
+	    │   │                   ├── api
+	    │   │                   │   └── >MyPluginComponent.java
+	    │   │                   └── impl
+	    │   │                       └── >MyPluginComponentImpl.java
+	    │   └── resources
+	    │       ├── META-INF
+	    │       │   └── spring
+	    │       │       └── plugin-context.xml
+	    │       ├── atlassian-plugin.xml
+	    │       ├── css
+	    │       │   └── myPlugin.css
+	    │       ├── images
+	    │       │   ├── pluginIcon.png
+	    │       │   └── pluginLogo.png
+	    │       ├── myPlugin.properties
+	    │       └── js
+	    │           └── myPlugin.js
+	    └── test
+	        ├── java
+	        │   ├── it
+	        │   │   └── com
+	        │   │       └── atlassian
+	        │   │           └── tutorial
+	        │   │               └── myPlugin
+	        │   │                   └── MyComponentWiredTest.java
+	        │   └── ut
+	        │       └── com
+	        │           └── atlassian
+	        │               └── tutorial
+	        │                   └── myPlugin
+	        │                       └── MyComponentUnitTest.java
+	        └── resources
+	            └── atlassian-plugin.xml
 
 Несложно понять, что плагин представляет собой Java-проект, который оборачивает код JavaScript.  
 
